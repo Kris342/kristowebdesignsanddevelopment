@@ -1,3 +1,6 @@
+
+/* HOME */
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +10,7 @@
 
 .main{
     width: 100%;
-    background: url(images/1.jpg);
+    background: url(images/11.jpeg);
     background-position: center;
     background-size: cover;
     height: 109vh;
@@ -296,7 +299,7 @@ letter-spacing: 2px;
 
 
 .icon a{
-    text-decoration: none;
+text-decoration: none;
     color: #fff; 
 }
 
@@ -310,8 +313,242 @@ letter-spacing: 2px;
 transition: 0.3s ease;
 }
 
-
-
-.icon ion-icon:hover{
-    color: #ff7200;
+.services {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  max-width: 1000px;
 }
+
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  width: 280px;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(8px);
+}
+
+.service-card i {
+  font-size: 40px;
+  color: orange;
+  margin-bottom: 15px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 165, 0, 0.3);
+}
+
+
+.cta {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cta-btn {
+  background: orange;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #ff6600;
+}
+
+
+.main { position: relative; }
+
+/* the services box overlay */
+.services {
+  position: absolute;
+  left: 40px;         /* move it to the left side */
+  top: 120px;         /* vertical offset from top of .main */
+  width: 320px;
+  border-radius: 16px;
+  padding: 18px;
+  background: rgba(20,20,25,0.65);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  color: #fff;
+}
+
+/* spacing for individual service cards inside */
+.service-card { margin: 14px 0; padding: 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.06); }
+
+
+.service-card {
+  transition: all 0.4s ease;
+}
+.service-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(255, 165, 0, 0.3);
+}
+
+
+.main {
+  position: relative; /* allows absolute child positioning */
+}
+
+/* why choose section */
+.why-us {
+  position: absolute;
+  bottom: 40px;     /* distance from bottom */
+  right: 40px;      /* distance from right edge */
+  width: 280px;
+  background: rgba(20, 20, 25, 0.75);
+  padding: 20px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.why-us h2 {
+  color: orange;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.why-us ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.why-us li {
+  margin: auto
+}
+
+
+.testimonials {
+    position: relative;
+    z-index: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  width: 280px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 25px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+
+.skills { width: 80%; margin: 40px auto; color: white; }
+.bar {
+  height: 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.fill {
+  height: 100%;
+  background: orange;
+  border-radius: 5px;
+  animation: grow 2s ease;
+}
+@keyframes grow { from {width: 0;} to {width: var(--target-width);} }
+
+
+.design-hero {
+  text-align: center;
+  color: white;
+  padding: 100px 20px 60px;
+}
+
+.design-hero h1 {
+  font-size: 42px;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.design-hero p {
+  font-size: 18px;
+  color: #ccc;
+}
+
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 40px;
+}
+
+.project {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid orange;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 30px rgba(255, 165, 0, 0.3);
+}
+
+
+
+/* bottom-right floating call to action */
+.design-cta {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background: rgba(20, 20, 25, 0.75);
+  color: #fff;
+  padding: 25px 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  text-align: right;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  max-width: 320px;
+}
+
+.design-cta p {
+  font-style: itali
+}
+
+
+/* Ensure parent allows absolute children */
+.main, .online, .page-wrapper {
+  position: relative;
+}
+
+/* CTA pinned top-left */
+.online-cta {
+  position: absolute;
+  top: 40px;             /* distance from top */
+  left: 40px;            /* distance from left */
+  right: auto;
+  bottom: auto;
+  background: rgba(20, 20, 25, 0.85);
+  padding: 22px 28
+}
+
